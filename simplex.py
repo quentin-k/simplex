@@ -123,10 +123,14 @@ def check_coords(coords, player, placing):
             return False
 
    #advanced checks
+   
+   #y value check
    if player == 1:
       c1 = coords[0] - coords[2]
    else:
       c1 = coords[2] - coords[0]
+   
+   #x value check
    c2 = abs(coords[1] - coords[3])
 
    if c1 == 1 or c1 == 2:
@@ -151,8 +155,8 @@ def check_coords(coords, player, placing):
                c3[1] = coords[1] + 1
             
             #checks fpr valid jump
-            c1 = board[c3[0]][c3[1]]
-            if c1 != player and c1 != 0:
+            c4 = board[c3[0]][c3[1]] #c4 gets the board piece
+            if c4 != player and c4 != 0:
                return 1
             else:
                print("Invalid jump!")
