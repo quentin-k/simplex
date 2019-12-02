@@ -152,7 +152,7 @@ def check_coords(coords, player, placing):
             
             #checks fpr valid jump
             c1 = board[c3[0]][c3[1]]
-            if c1 != player and c1 != 0 and (coords[0] != 5 and coords[2] != 4):
+            if c1 != player and c1 != 0:
                return 1
             else:
                print("Invalid jump!")
