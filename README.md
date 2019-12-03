@@ -14,6 +14,7 @@ python
 # Planned implementations
 
 C
+Rust
 
 # Current state
 
