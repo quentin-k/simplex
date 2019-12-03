@@ -15,6 +15,10 @@ python
 
 C
 
+# Current state
+
+Unplayable, unfortunately the python implementation has some critical errors that need to be fixed. The two most glaring are the inability to place pieces, and the false jumps that occur. This repository will remain open, but it is ill advised to play the game digitally. If you wish to play simplex, the python version will give you a correct initial board state.
+
 # Additional notes
 
 if you create another implementaion add it to this repository
